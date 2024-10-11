@@ -22,7 +22,7 @@ def galgje():
         print(f"Resterende pogingen: {aantal_pogingen - (aantal_pogingen_counter)}")
         gok = input("Raad een letter: ")
 
-        if gok in correcte_gok or gok.lower() in verkeerde_gok:
+        if gok in correcte_gok or gok in verkeerde_gok:
             print(f"Je hebt de letter '{gok}' al gebruikt.")
 
         elif gok in woord:
@@ -40,4 +40,4 @@ def galgje():
 
         if aantal_pogingen_counter == aantal_pogingen:
             print(f"\nhet juiste woord was '{woord}', probeer het nog eens")
-galgje()
+# galgje()
