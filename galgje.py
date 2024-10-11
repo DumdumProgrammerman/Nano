@@ -1,7 +1,7 @@
 import random
 
 def random_woord_picker():
-    with open("woordenlijst.txt","r") as file:
+    with open("woordenlijst.txt", "r") as file:
         woordenlijst = file.read().split()
     return random.choice(woordenlijst).lower()
 
@@ -22,7 +22,7 @@ def galgje():
         print(f"Resterende pogingen: {aantal_pogingen - (aantal_pogingen_counter)}")
         gok = input("Raad een letter: ")
 
-        if gok in correcte_gok or gok in verkeerde_gok:
+        if gok in correcte_gok or gok.lower() in verkeerde_gok:
             print(f"Je hebt de letter '{gok}' al gebruikt.")
 
         elif gok in woord:
