@@ -38,4 +38,6 @@ def galgje():
             print(f"Gefeliciteerd! Je hebt het woord '{woord}' geraden!")
             break
 
+        if aantal_pogingen_counter == aantal_pogingen:
+            print(f"\nhet juiste woord was '{woord}', probeer het nog eens")
 galgje()
