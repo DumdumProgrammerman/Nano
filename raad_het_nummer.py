@@ -11,8 +11,12 @@ def raad_het_nummer():
     print (f'Je hebt {numbers_of_guesses} kansen om het juiste nummer te raden')
 
     for guesses in range(1, numbers_of_guesses + 1):
-        guess = int(input(f'Poging {guesses} van {numbers_of_guesses} - raad het nummer: '))
-
+        while True:
+            try:
+                guess = int(input(f'Poging {guesses} van {numbers_of_guesses} - raad het nummer: '))
+                break
+            except ValueError:
+                print("Dit is geen getal, voer een getal in.")
         if guess == random_number:
             print("Gefeliciteerd, je hebt het nummer geraden!")
             break
@@ -22,4 +26,4 @@ def raad_het_nummer():
     if guess != random_number:
         print(f"Sorry {name}, je hebt al je kansen benut. Het juiste nummer was {random_number}")
 
-# raad_het_nummer()
+raad_het_nummer()
