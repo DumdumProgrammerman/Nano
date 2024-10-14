@@ -44,4 +44,4 @@ def galgje():
 
         if aantal_pogingen_counter == aantal_pogingen:
             print(f"\nhet juiste woord was '{woord}', probeer het nog eens")
-galgje()
+# galgje()
