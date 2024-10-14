@@ -26,4 +26,4 @@ def raad_het_nummer():
     if guess != random_number:
         print(f"Sorry {name}, je hebt al je kansen benut. Het juiste nummer was {random_number}")
 
-raad_het_nummer()
+# raad_het_nummer()
